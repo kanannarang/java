@@ -54,12 +54,13 @@ public class inputarr {
             }
         } 
         System.out.println("the maximum element is = " + max);
-
+        
         for(int  i=0;i<arr.length;i++){
             if (min > arr[i]) {
                 min = arr[i];
                 }
-            } 
+            }
+         
             System.out.println("the minimum element is = "+ min);
    
    }
