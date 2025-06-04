@@ -15,17 +15,18 @@ public void run(){
             e.printStackTrace();
         }
         totalBalance-=amount;
-        System.out.println(totalBalance);
+        System.out.println("AVAILABLE BALANCE: "+totalBalance);
     }
-    else{
+    else{ 
         System.out.println("Insufficient Balance");
     }
 }}
 public class multithreading4 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
     WithdrawThread x = new WithdrawThread(800);
     WithdrawThread y = new WithdrawThread(500);
     x.start();
+    x.join();
     y.start();
     }  
     
